@@ -16,3 +16,17 @@ td:first-of-type, td:first-of-type > div {
   height: 200px;
   width: 250px;
 }
+
+.dropdown-menu > .dropdown-item {
+  width: 300px;
+}
+
+.dropdown {
+    width: 200px;
+}
+
+#dropdownMenuButton {
+  width: 200px;
+  text-align: center;
+  margin: 0 10px;
+}

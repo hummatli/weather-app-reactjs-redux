@@ -64,7 +64,7 @@ class SearchBar extends Component {
           value={this.state.term}
           onChange={this.onInputChange} />
         <div className="dropdown input-group-btn">
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button className="btn btn-secondary dropdown-toggle btn-info" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {this.state.country.name}
           </button>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -72,7 +72,7 @@ class SearchBar extends Component {
           </div>
         </div>
         <span className="input-group-btn">
-          <button type="submit" className="btn btn-secondary">Submit</button>
+          <button id="btnSubmit" type="submit" className="btn btn-info">Submit</button>
         </span>
       </form>
     );
