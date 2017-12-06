@@ -9,9 +9,9 @@ It uses:
 
 
 #### App URL
-Demo App serves in following [URL](https://hummatli.github.io/youtube-app-reactjs/)
+Demo App serves in following [URL](https://hummatli.github.io/weather-app-reactjs-redux/)
 
 <p align="center">
-<a href="https://hummatli.github.io/youtube-app-reactjs/"><img src="https://raw.githubusercontent.com/hummatli/youtube-app-reactjs/master/assets/screenshot.png" width="900px"/></a>
+<a href="https://hummatli.github.io/weather-app-reactjs-redux/"><img src="https://raw.githubusercontent.com/hummatli/weather-app-reactjs-redux/master/screenshot.png" width="900px"/></a>
 </p>
 
