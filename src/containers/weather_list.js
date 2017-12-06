@@ -4,6 +4,13 @@ import Chart from '../components/chart';
 import GoogleMap from '../components/google_map';
 
 class WeatherList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.renderWeather = this.renderWeather.bind(this);
+    this.id = 0;
+  }
+
   renderWeather(cityData) {
     const name = cityData.city.name;
     const temps = cityData.list.map(weather => weather.main.temp);
@@ -12,7 +19,7 @@ class WeatherList extends Component {
     const { lon, lat } = cityData.city.coord;
 
     return (
-      <tr key={name}>
+      <tr key={++this.id}>
         <td><GoogleMap lon={lon} lat={lat}/></td>
         <td><Chart data={temps} color="orange" units="K" /></td>
         <td><Chart data={pressures} color="green" units="hPa" /></td>

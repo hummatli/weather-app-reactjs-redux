@@ -25620,10 +25620,14 @@
 	var WeatherList = function (_Component) {
 	  _inherits(WeatherList, _Component);
 
-	  function WeatherList() {
+	  function WeatherList(props) {
 	    _classCallCheck(this, WeatherList);
 
-	    return _possibleConstructorReturn(this, (WeatherList.__proto__ || Object.getPrototypeOf(WeatherList)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (WeatherList.__proto__ || Object.getPrototypeOf(WeatherList)).call(this, props));
+
+	    _this.renderWeather = _this.renderWeather.bind(_this);
+	    _this.id = 0;
+	    return _this;
 	  }
 
 	  _createClass(WeatherList, [{
@@ -25646,7 +25650,7 @@
 
 	      return _react2.default.createElement(
 	        'tr',
-	        { key: name },
+	        { key: ++this.id },
 	        _react2.default.createElement(
 	          'td',
 	          null,
